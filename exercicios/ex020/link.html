@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+            seletores personalizados
+            # = id        
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+        */
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {
+            color:rgb(85, 116, 40);
+        }
+
+        a:hover {
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: underline;
+        }
+        /*:active é quando vc clica*/
+        a:active {
+            color: coral;
+        }
+
+        /*pseudoelemento ::*/
+        a::after {
+            content: '[link]';
+            color: darkblue;
+            font-weight: normal;
+        }
+
+        .carreira::before {
+            content: '♥';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.autoscout24.com/lst/mazda/rx-8" target="_blank">meu futuro carro</a></li>
+        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjQ_-jOvaqMAxWYLkQIHWyKGnIYABAAGgJkeg&co=1&gclid=CjwKCAjw7pO_BhAlEiwA4pMQvArxFXRu4chSDoPgMp3pAEys0TbbRJwFkec6L0WMsNRLYfW1f9CJIBoCnXEQAvD_BwE&ohost=www.google.com&cid=CAESVeD271o-xWt563tKuXNkr_gN_aiJva4LvrFolCPXgBAFndt81BJXTxMes_I1CFv4E2d6B_jBqQU4tYD9UVKXzrnZNDqUoi5vG-394p5X9FrZkatn1x4&sig=AOD64_0hZGe9Kzxj04S-b8QdSxQQMnF4iw&q&adurl&ved=2ahUKEwjbx93OvaqMAxX8pZUCHdXfMT4Q0Qx6BAgrEAQ"class="carreira">minha futura cidade</a></li>
+        <li><a href="https://www.glassdoor.com.br/Sal%C3%A1rios/programador-senior-sal%C3%A1rio-SRCH_KO0,18.htm" class="carreira">minha futura carreira</a></li>
+    </ul>
+    
+</body>
+</html>
