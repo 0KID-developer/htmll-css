@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+/* PARA IMPRESSORA*/
+
+* {
+    padding: 10px;
+    margin: 10px;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'esse aqrv foi criado no dia 07/05/25';
+}
